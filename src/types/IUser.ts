@@ -14,6 +14,10 @@ export interface IUser extends Document {
     quizId: string;
     currentQuestion: number;
   }>;
+  answeredQuestions: Array<{
+    quizId: string;
+    currentQuestion: number;
+  }>;
   createdAt: Date;
   updatedAt: Date;
 }
